@@ -1,0 +1,1139 @@
+
+<!doctype html>
+<html lang="is" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Magnús Pétursson designs, builds and teaches: electronics, digital fabrication and generative art.">
+      
+      
+        <meta name="author" content="Magnús Pétursson">
+      
+      
+        <link rel="canonical" href="https://magnusp.is/gervigreind-fablab-island/">
+      
+      
+      
+      
+        
+          <link rel="alternate" href="/" hreflang="en">
+        
+          <link rel="alternate" href="/is/" hreflang="is">
+        
+      
+      
+      <link rel="icon" href="../images/favicon.svg">
+      <meta name="generator" content="zensical-0.0.67">
+    
+    
+  <title>Gervigreind og agentar – Fab Lab Ísland</title>
+
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.4ae390e2.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.96d1a7e4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+  
+    <script data-goatcounter="https://magnusp.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  
+
+    
+  
+  <link rel="preload" href="/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Magnús Pétursson">
+  <meta property="og:title" content="Gervigreind og agentar – Magnús Pétursson">
+  <meta property="og:description" content="Magnús Pétursson designs, builds and teaches: electronics, digital fabrication and generative art.">
+  <meta property="og:url" content="https://magnusp.is/gervigreind-fablab-island/">
+  <meta property="og:image" content="https://magnusp.is/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    /* Handout layout for a single talk page: title block, jump list, one card per question. */
+    .mp-header__tools { margin-left: auto; }
+
+    .mp-faq { max-width: 46rem; margin-inline: auto; width: 100%; }
+    .mp-faq .md-content__inner { margin-top: 2.2rem; padding-bottom: 4rem; }
+    .mp-faq .headerlink { display: none; }
+    .mp-faq .md-typeset { counter-reset: q; }
+
+    /* Title block */
+    .md-typeset .mp-faq-head { padding: 0 0 1.2rem; }
+    .md-typeset .mp-faq-head h1 { margin: 0; max-width: none; font-size: 2.5rem; }
+    .md-typeset .mp-faq-head .mp-faq-meta {
+      font-family: var(--mp-display);
+      font-size: 0.82rem;
+      color: var(--mp-ink-soft);
+      margin: 0.45rem 0 0;
+      letter-spacing: 0.01em;
+    }
+
+    /* Jump list */
+    .md-typeset .mp-faq-toc {
+      border-top: 1px solid var(--mp-rule);
+      border-bottom: 1px solid var(--mp-rule);
+      padding: 1rem 0;
+      margin: 0 0 2.4rem;
+    }
+    .md-typeset .mp-faq-toc ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 2rem;
+      counter-reset: toc;
+    }
+    .md-typeset .mp-faq-toc li {
+      counter-increment: toc;
+      break-inside: avoid;
+      margin: 0;
+      padding: 0.22rem 0 0.22rem 1.6em;
+      position: relative;
+      font-family: var(--mp-display);
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
+    .md-typeset .mp-faq-toc li::before {
+      content: counter(toc);
+      position: absolute;
+      left: 0;
+      width: 1em;
+      text-align: right;
+      color: var(--mp-ink-soft);
+      font-variant-numeric: tabular-nums;
+    }
+    .md-typeset .mp-faq-toc a { text-decoration: none; color: var(--mp-ink); }
+    .md-typeset .mp-faq-toc a:hover,
+    .md-typeset .mp-faq-toc a:focus { color: var(--mp-mask); text-decoration: underline; }
+
+    /* One card per question */
+    .md-typeset .mp-q {
+      counter-increment: q;
+      background: var(--mp-plate);
+      border: 1px solid var(--mp-rule);
+      border-radius: var(--mp-radius);
+      padding: 1.5rem 1.8rem 1.6rem;
+      margin: 0 0 1.2rem;
+    }
+    .md-typeset .mp-q > :last-child { margin-bottom: 0; }
+    .md-typeset .mp-q h2 {
+      margin: 0 0 0.9rem;
+      scroll-margin-top: 4.5rem;
+      font-size: 1.4rem;
+    }
+    .md-typeset .mp-q h2::before {
+      content: counter(q);
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--mp-mask);
+      margin-bottom: 0.1rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .md-typeset .mp-q p,
+    .md-typeset .mp-q ul { max-width: var(--mp-measure); }
+    .md-typeset .mp-q ul { margin: 0.6rem 0 0.6rem 1.1rem; }
+    .md-typeset .mp-q ul li { margin: 0 0 0.35rem 1rem; }
+    .md-typeset .mp-q ul li::marker { color: var(--mp-ink-soft); }
+
+    .md-typeset .mp-note {
+      border-left: 2px solid var(--mp-mask);
+      padding: 0.1rem 0 0.1rem 0.9rem;
+      margin: 1rem 0;
+    }
+    .md-typeset .mp-aside {
+      font-size: 0.8rem;
+      color: var(--mp-ink-soft);
+      margin: 0.8rem 0 0;
+    }
+
+    /* Chat vs agent */
+    .mp-faq .md-typeset dl.mp-pair {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin: 1.1rem 0 0;
+    }
+    .mp-faq .md-typeset dl.mp-pair--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .md-typeset .mp-pair > div {
+      border: 1px solid var(--mp-rule);
+      border-radius: var(--mp-radius);
+      padding: 0.8rem 1rem;
+      background: var(--mp-paper);
+    }
+    .mp-faq .md-typeset dl.mp-pair dt {
+      font-family: var(--mp-display);
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: var(--mp-mask);
+      margin: 0 0 0.2rem;
+    }
+    .mp-faq .md-typeset dl.mp-pair dd,
+    .mp-faq .md-typeset dl.mp-terms dd { margin: 0; color: var(--mp-ink); }
+
+    /* Term list */
+    .md-typeset .mp-terms { margin: 1rem 0 0; max-width: var(--mp-measure); }
+    .md-typeset .mp-terms > div { padding: 0.75rem 0; border-top: 1px solid var(--mp-rule); }
+    .md-typeset .mp-terms > div:last-child { padding-bottom: 0; }
+    .mp-faq .md-typeset dl.mp-terms dt {
+      font-family: var(--mp-display);
+      font-weight: 600;
+      margin: 0 0 0.15rem;
+    }
+
+    /* Tables */
+    .md-typeset table.mp-table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin: 0.4rem 0 0;
+      background: transparent;
+    }
+    .md-typeset table.mp-table th,
+    .md-typeset table.mp-table td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.65rem 1.2rem 0.65rem 0;
+      border-top: 1px solid var(--mp-rule);
+    }
+    .md-typeset table.mp-table tr > :last-child { padding-right: 0; }
+    .md-typeset table.mp-table thead th {
+      font-family: var(--mp-display);
+      font-weight: 600;
+      font-size: 0.72rem;
+      color: var(--mp-ink);
+      border-top: 0;
+      border-bottom: 1px solid var(--mp-ink-soft);
+      padding-top: 0;
+      padding-bottom: 0.45rem;
+    }
+    .md-typeset table.mp-table tbody tr:first-child > * { border-top: 0; }
+    .md-typeset table.mp-table tbody th {
+      font-family: var(--mp-display);
+      font-weight: 600;
+      color: var(--mp-ink);
+    }
+    .md-typeset .mp-table--ways tbody th { width: 25%; }
+    .md-typeset .mp-table--ways td:last-child { width: 30%; color: var(--mp-ink-soft); }
+    .md-typeset .mp-table--tools tbody th { width: 34%; }
+    .md-typeset .mp-vendor { display: block; font-weight: 400; color: var(--mp-ink-soft); font-size: 0.92em; }
+
+    .md-typeset .mp-table--tools tbody th a { color: inherit; text-decoration: underline; text-decoration-color: var(--mp-ink-soft); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+    .md-typeset .mp-table--tools tbody th a:hover,
+    .md-typeset .mp-table--tools tbody th a:focus { color: var(--mp-mask); text-decoration-color: currentColor; }
+
+    /* One picture per way of working: same width and 16:10 frame; click opens the full image. */
+    .md-typeset .mp-shot { margin: 0.7rem 0 0.1rem; max-width: 19rem; }
+    .md-typeset .mp-shot a { display: block; line-height: 0; }
+    .md-typeset .mp-shot img,
+    .md-typeset .mp-shot picture { display: block; }
+    .md-typeset .mp-shot img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: contain;
+      background: var(--mp-plate);
+      border: 1px solid var(--mp-rule);
+      border-radius: var(--mp-radius);
+    }
+    .md-typeset .mp-shot a:hover img,
+    .md-typeset .mp-shot a:focus img { border-color: var(--mp-ink-soft); }
+    [data-md-color-scheme="slate"] .md-typeset .mp-shot--diagram img { filter: brightness(0.86); }
+    .md-typeset .mp-shot figcaption {
+      margin: 0.3rem 0 0;
+      max-width: none;
+      font-size: 0.64rem;
+      line-height: 1.4;
+      text-align: left;
+      color: var(--mp-ink-soft);
+    }
+    .md-typeset .mp-prompt .md-code__button,
+    .md-typeset .mp-prompt .md-clipboard { color: var(--mp-ink-soft); }
+
+    /* Prompt */
+    .md-typeset .mp-prompt-label { margin: 1.4rem 0 0.5rem; }
+    .md-typeset .mp-prompt pre > code {
+      white-space: pre-wrap;
+      word-break: normal;
+      overflow-wrap: anywhere;
+      font-size: 0.74rem;
+      line-height: 1.6;
+      padding: 1rem 2.6rem 1rem 1rem;
+      background: var(--mp-paper);
+    }
+
+    @media screen and (max-width: 44.9375em) {
+      .md-typeset .mp-faq-toc ol { columns: 1; }
+      .md-typeset .mp-faq-head h1 { font-size: 2rem; }
+    }
+
+    @media screen and (max-width: 37.5em) {
+      .mp-faq .md-content__inner { margin: 0.4rem 0.8rem 0; }
+      .md-typeset .mp-faq-head { padding-bottom: 1rem; }
+      .md-typeset .mp-faq-toc { margin-bottom: 1.6rem; }
+      .md-typeset .mp-q { padding: 1.15rem 1rem 1.25rem; }
+      .md-typeset .mp-q h2 { font-size: 1.2rem; }
+      .md-typeset .mp-q ul { margin-left: 0.4rem; }
+      .md-typeset .mp-q ul li { margin-left: 0.9rem; }
+      .md-typeset .mp-pair > div { padding: 0.6rem 0.8rem; }
+      .md-typeset .mp-prompt pre > code { font-size: 0.68rem; padding: 0.8rem 2.2rem 0.8rem 0.8rem; }
+      .md-typeset .mp-shot { max-width: none; margin-top: 0.6rem; }
+      /* Phones get the stacked version of the diagram (see the picture element). */
+      .md-typeset .mp-shot--diagram { max-width: 20rem; }
+      .md-typeset .mp-shot--diagram img { aspect-ratio: auto; }
+      .md-typeset .mp-pair { grid-template-columns: 1fr; }
+      .mp-faq .md-typeset dl.mp-pair--three { grid-template-columns: 1fr; }
+
+      /* Tables stack: each row becomes a short block. */
+      .md-typeset table.mp-table,
+      .md-typeset table.mp-table tbody,
+      .md-typeset table.mp-table tr,
+      .md-typeset table.mp-table th,
+      .md-typeset table.mp-table td { display: block; width: auto !important; }
+      .md-typeset table.mp-table thead { display: none; }
+      .md-typeset table.mp-table tr { border-top: 1px solid var(--mp-rule); padding: 0.7rem 0; }
+      .md-typeset table.mp-table tbody tr:first-child { border-top: 0; padding-top: 0.2rem; }
+      .md-typeset table.mp-table th,
+      .md-typeset table.mp-table td { border: 0; padding: 0; }
+      .md-typeset table.mp-table tbody th { margin-bottom: 0.2rem; }
+      .md-typeset table.mp-table td:empty { display: none; }
+      .md-typeset .mp-table--ways td:last-child { margin-top: 0.2rem; }
+      .md-typeset .mp-vendor { display: inline; }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Valmynd"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gervigreind-og-agentar" class="md-skip">
+          Hoppa yfir í efnið
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+<header class="md-header mp-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Haus">
+    
+    <a href="./.." class="mp-brand" data-md-component="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 5" class="mp-mark" aria-hidden="true"><rect x="0.04" y="0.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="0.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="1.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="3.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="2.04" width="0.92" height="0.92" fill="currentColor"/><rect x="2.04" y="2.04" width="0.92" height="0.92" fill="#D9352B"/><rect x="4.04" y="2.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="3.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="3.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="4.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="4.04" width="0.92" height="0.92" fill="currentColor"/></svg>
+      <span class="mp-brand__name">Magnús Pétursson</span>
+    </a>
+    
+    <div class="mp-header__tools">
+      
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+</form>
+        <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Valmynd" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Magnús Pétursson" class="md-nav__button md-logo" aria-label="Magnús Pétursson" data-md-component="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 5" class="mp-mark" aria-hidden="true"><rect x="0.04" y="0.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="0.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="1.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="3.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="1.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="2.04" width="0.92" height="0.92" fill="currentColor"/><rect x="2.04" y="2.04" width="0.92" height="0.92" fill="#D9352B"/><rect x="4.04" y="2.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="3.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="3.04" width="0.92" height="0.92" fill="currentColor"/><rect x="0.04" y="4.04" width="0.92" height="0.92" fill="currentColor"/><rect x="4.04" y="4.04" width="0.92" height="0.92" fill="currentColor"/></svg>
+    </a>
+    Magnús Pétursson
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../projects/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Projects
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Projects
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/mccompass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  McCompass
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/glasslight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  GlassLight
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/pfb-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  PFB Studio
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  About
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Contact
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Efnisyfirlit">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Efnisyfirlit
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hvad-er-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvað er agent?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-agent-myndgerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Chat, agent og myndgerð
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hvad-getur-agent-gert" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvað getur agent gert?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tengingar-mcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tengingar (MCP)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oryggi-og-gogn" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Öryggi og gögn
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sandbox-og-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sandbox og Docker
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hvernig-vinnur-madur-med-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvernig vinnur maður með agent?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hvad-er-i-bodi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvað er í boði?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ekki-alltaf-eins" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gervigreind og gervigreind eru ekki alltaf eins
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hvar-byrja-eg" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvar byrja ég og hvað kostar það?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gott-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvernig skrifa ég gott prompt?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bara-ad-bulla" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Hvernig veit ég hvort hann sé bara að bulla?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content mp-faq" data-md-component="content">
+    <article class="md-content__inner md-typeset" lang="is">
+      <header class="mp-faq-head">
+<h1 id="gervigreind-og-agentar">Gervigreind og agentar<a class="headerlink" href="#gervigreind-og-agentar" title="Permanent link">&para;</a></h1>
+<p class="mp-faq-meta">Fab Lab Ísland · 18. nóvember 2026</p>
+</header>
+<nav class="mp-faq-toc" aria-label="Spurningar">
+<ol>
+<li><a href="#hvad-er-agent">Hvað er agent?</a></li>
+<li><a href="#chat-agent-myndgerd">Chat, agent og myndgerð</a></li>
+<li><a href="#hvad-getur-agent-gert">Hvað getur agent gert?</a></li>
+<li><a href="#tengingar-mcp">Tengingar (MCP)</a></li>
+<li><a href="#oryggi-og-gogn">Öryggi og gögn</a></li>
+<li><a href="#sandbox-og-docker">Sandbox og Docker</a></li>
+<li><a href="#hvernig-vinnur-madur-med-agent">Hvernig vinnur maður með agent?</a></li>
+<li><a href="#hvad-er-i-bodi">Hvað er í boði?</a></li>
+<li><a href="#ekki-alltaf-eins">Gervigreind og gervigreind eru ekki alltaf eins</a></li>
+<li><a href="#hvar-byrja-eg">Hvar byrja ég og hvað kostar það?</a></li>
+<li><a href="#gott-prompt">Hvernig skrifa ég gott prompt?</a></li>
+<li><a href="#bara-ad-bulla">Hvernig veit ég hvort hann sé bara að bulla?</a></li>
+</ol>
+</nav>
+
+<section class="mp-q">
+<h2 id="hvad-er-agent">Hvað er agent?<a class="headerlink" href="#hvad-er-agent" title="Permanent link">&para;</a></h2>
+<p>Gervigreind sem getur framkvæmt, ekki bara svarað. Hún fær tól (skrár, skipanir, vafra), tekur skref, skoðar útkomuna og ákveður næsta skref.</p>
+</section>
+<section class="mp-q">
+<h2 id="chat-agent-myndgerd">Chat, agent og myndgerð<a class="headerlink" href="#chat-agent-myndgerd" title="Permanent link">&para;</a></h2>
+<dl class="mp-pair mp-pair--three">
+<div>
+<dt>Chat</dt>
+<dd>Svarar og skrifar texta. Þið vinnið verkið sjálf.</dd>
+</div>
+<div>
+<dt>Agent</dt>
+<dd>Vinnur verkið. Les og breytir skrám, keyrir skipanir og prófar útkomuna.</dd>
+</div>
+<div>
+<dt>Myndgerð</dt>
+<dd>Býr til myndir. Hugsar hvorki né framkvæmir.</dd>
+</div>
+</dl>
+</section>
+<section class="mp-q">
+<h2 id="hvad-getur-agent-gert">Hvað getur agent gert?<a class="headerlink" href="#hvad-getur-agent-gert" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Lesið og breytt skrám, keyrt skipanir, byggt og prófað hluti.</li>
+<li>Unnið sjálfstætt að markmiði í mörgum skrefum.</li>
+</ul>
+<p class="mp-note">Hann vinnur með þeim aðgangi sem þið gefið honum. Ef hann skýtur upp á bak getur það verið fjörugt. <strong>Passið að takmarka aðgengi.</strong></p>
+</section>
+<section class="mp-q">
+<h2 id="tengingar-mcp">Tengingar (MCP)<a class="headerlink" href="#tengingar-mcp" title="Permanent link">&para;</a></h2>
+<p>MCP er staðall sem leyfir agent-um að tala við annan hugbúnað. Til dæmis Google Workspace (póstur, Drive, dagatal), Notion eða gagnagrunna. Svipað og USB fyrir gervigreind.</p>
+<p class="mp-note">Tengið bara það sem verkefnið þarf. <strong>Alltaf best að byrja read-only.</strong></p>
+<p class="mp-aside">(Ég hef aldrei treyst gervigreind fyrir samskiptum)</p>
+</section>
+<section class="mp-q">
+<h2 id="oryggi-og-gogn">Öryggi og gögn<a class="headerlink" href="#oryggi-og-gogn" title="Permanent link">&para;</a></h2>
+<p>Byrjið í afmörkuðu umhverfi: ein mappa, engar persónuupplýsingar, engin admin réttindi.</p>
+<dl class="mp-terms">
+<div>
+<dt>Permission modes</dt>
+<dd>Agentinn spyr áður en hann framkvæmir (Claude Code: Manual eða Plan. Codex: Approval). Aldrei byrja í "skip permissions".</dd>
+</div>
+<div>
+<dt>Prompt injection</dt>
+<dd>Tölvupóstur eða vefsíða getur haft faldar skipanir sem agentinn hlýðir. Þess vegna skiptir máli hvað þið tengið hann við.</dd>
+</div>
+<div>
+<dt>Þjálfun</dt>
+<dd>ChatGPT og Gemini á persónulegum áskriftum þjálfa á gögnunum ykkar nema þið slökkvið á því. Claude spyr. Vinnu- og skólaáskriftir þjálfa ekki.</dd>
+</div>
+</dl>
+</section>
+<section class="mp-q">
+<h2 id="sandbox-og-docker">Sandbox og Docker<a class="headerlink" href="#sandbox-og-docker" title="Permanent link">&para;</a></h2>
+<p>Því meiri einangrun, því meira frelsi má gefa agentinum.</p>
+<dl class="mp-terms">
+<div>
+<dt>Sandbox</dt>
+<dd>Agentinn kemst bara í eina möppu og fer ekki á netið nema þið leyfið það. Codex gerir þetta sjálfgefið. Í Claude Code kveikið þið á því með /sandbox.</dd>
+</div>
+<div>
+<dt>Sér notandi eða virtual machine</dt>
+<dd>Agentinn fær sinn eigin aðgang að tölvunni, án ykkar skjala og innskráninga.</dd>
+</div>
+<div>
+<dt>Docker</dt>
+<dd>Agentinn keyrir í container sem er einangraður frá restinni af tölvunni. Þá má leyfa honum meira án þess að hann snerti annað. VS Code Dev Containers einfalda þetta. Á Windows og Mac þarf Docker Desktop.</dd>
+</div>
+</dl>
+</section>
+<section class="mp-q">
+<h2 id="hvernig-vinnur-madur-med-agent">Hvernig vinnur maður með agent?<a class="headerlink" href="#hvernig-vinnur-madur-med-agent" title="Permanent link">&para;</a></h2>
+<table class="mp-table mp-table--ways">
+<thead>
+<tr>
+<th scope="col">Leið</th>
+<th scope="col">Dæmi</th>
+<th scope="col">Athugasemd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Forrit</th>
+<td>Claude Desktop (með Claude Code) eða Codex appið.<figure class="mp-shot"><a href="../images/faq/forrit-codex-app.webp"><img src="../images/faq/forrit-codex-app-litil.webp" width="720" height="450" loading="lazy" alt="Skjámynd af Codex appinu: verkefnalisti til vinstri og samtal við agentinn til hægri."></a><figcaption>Mynd: OpenAI</figcaption></figure></td>
+<td>Auðveldasta byrjunin.</td>
+</tr>
+<tr>
+<th scope="row">Í IDE</th>
+<td>VS Code með Claude Code eða Codex viðbót, Cursor, Google Antigravity.<figure class="mp-shot"><a href="../images/faq/ide-vscode-claude-code.webp"><img src="../images/faq/ide-vscode-claude-code-litil.webp" width="720" height="450" loading="lazy" alt="Skjámynd af VS Code með Claude Code viðbótinni: kóði í miðjunni og samtal við Claude Code til hægri."></a><figcaption>Mynd: Anthropic</figcaption></figure></td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">Í terminal (CLI)</th>
+<td>Claude Code, Codex CLI.<figure class="mp-shot"><a href="../images/faq/terminal-claude-code.webp"><img src="../images/faq/terminal-claude-code-litil.webp" width="720" height="450" loading="lazy" alt="Skjámynd af Claude Code í terminal: spurt hvað sé í möppunni og agentinn lýsir skránum þremur."></a></figure><figure class="mp-shot"><a href="../images/faq/terminal-codex-cli.webp"><img src="../images/faq/terminal-codex-cli-litil.webp" width="720" height="450" loading="lazy" alt="Skjámynd af Codex CLI í terminal: beðið um útskýringu á kóða og agentinn gerir áætlun."></a><figcaption>Mynd: OpenAI</figcaption></figure></td>
+<td>Öflugast en tæknilegast.</td>
+</tr>
+<tr>
+<th scope="row">Í skýinu</th>
+<td>Codex cloud, Claude Code á vefnum.<figure class="mp-shot"><a href="../images/faq/sky-codex-cloud.webp"><img src="../images/faq/sky-codex-cloud-litil.webp" width="720" height="450" loading="lazy" alt="Skjámynd af Codex í vafra: fyrri verkefni til vinstri og reitur fyrir nýtt verkefni í miðjunni."></a><figcaption>Mynd: OpenAI</figcaption></figure></td>
+<td>Vinnur á afriti hjá þeim, ekki á tölvunni ykkar.</td>
+</tr>
+<tr>
+<th scope="row">Í gegnum spjallforrit</th>
+<td>Hermes á t.d. Discord<figure class="mp-shot mp-shot--diagram"><a href="../images/agent-uppsetning.svg"><picture><source media="(max-width: 37.5em)" srcset="../images/agent-uppsetning-lodrett.svg" width="900" height="1470"><img src="../images/agent-uppsetning.svg" width="1600" height="740" loading="lazy" alt="Skýringarmynd: Magnús talar við Hermes í gegnum Discord. Hermes keyrir á server tölvu og tengist Metis á fartölvu og Talos á borðtölvu. Þær nota Claude og ChatGPT."></picture></a></figure><figure class="mp-shot"><a href="../images/faq/discord-hermes.webp"><img src="../images/faq/discord-hermes-litil.webp" width="720" height="502" loading="lazy" alt="Skjámynd af Discord í síma: beðið um vefsíðu með þrívíddarkorti af Íslandi og Hermes byrjar að vinna."></a></figure><figure class="mp-shot"><a href="../images/faq/terminal-hermes.webp"><img src="../images/faq/terminal-hermes-litil.webp" width="720" height="479" loading="lazy" alt="Skjámynd af Hermes í terminal: raðar 20 laser-skrám í möppur eftir efni og þykkt og segir hvaða skrár eru of stórar fyrir laserinn."></a></figure></td>
+<td>(Ég nota þetta mikið)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="mp-q">
+<h2 id="hvad-er-i-bodi">Hvað er í boði?<a class="headerlink" href="#hvad-er-i-bodi" title="Permanent link">&para;</a></h2>
+<table class="mp-table mp-table--tools">
+<thead>
+<tr>
+<th scope="col">Agent</th>
+<th scope="col">Styrkleikar og veikleikar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><a href="https://claude.com/product/claude-code">Claude Code</a> <span class="mp-vendor">(Anthropic)</span></th>
+<td>Sterkt í kóða og löngum, vönduðum verkefnum. Góð stjórn á heimildum.</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://openai.com/codex/">Codex</a> <span class="mp-vendor">(OpenAI)</span></th>
+<td>Innifalið í ChatGPT Plus. Keyrir í sandbox sjálfgefið. Þægilegra viðmót en ekki jafn góður forritari.</td>
+</tr>
+<tr>
+<th scope="row">Gemini / <a href="https://antigravity.google/">Antigravity</a> <span class="mp-vendor">(Google)</span></th>
+<td>Stórt context og ódýr byrjun. Ekki jafn fínpússuð upplifun.</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://github.com/features/copilot">GitHub Copilot</a></th>
+<td>Fyrir forritara inni í IDE. Ekki það sama og Microsoft Copilot.</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://github.com/NousResearch/hermes-agent">Hermes</a> og annað open source</th>
+<td>Full stjórn og hvaða módel sem er. Þið keyrið þetta sjálf. Bleeding edge.</td>
+</tr>
+<tr>
+<th scope="row">Local módel <span class="mp-vendor">(<a href="https://ollama.com">Ollama</a>, <a href="https://lmstudio.ai">LM Studio</a>)</span></th>
+<td>Gögnin fara aldrei af tölvunni. Ókeypis en töluvert slakari.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="mp-q">
+<h2 id="ekki-alltaf-eins">Gervigreind og gervigreind eru ekki alltaf eins<a class="headerlink" href="#ekki-alltaf-eins" title="Permanent link">&para;</a></h2>
+<p>Hver framleiðandi býður upp á nokkur módel. Skiptast sirka í tvennt: Stór, hæg og dýr. Lítil, hröð og ódýr.</p>
+<dl class="mp-terms">
+<div>
+<dt>Dæmi</dt>
+<dd>Claude Opus, Sonnet og Haiku.<br>Gemini Pro og Flash.<br>GPT Astra, Sol, Terra og Luna.</dd>
+</div>
+<div>
+<dt>"Thinking"</dt>
+<dd>Mörg módel geta hugsað lengur áður en þau svara. Betra í flókin verkefni.</dd>
+</div>
+</dl>
+<p>Ókeypis áskriftir fá oftast minni og mikið takmarkaðri módel.</p>
+<p>Fyrir agent-a skiptir þetta miklu máli. Lítið módel á frekar til að mistakast eða jafnvel gefast upp í lengri verkefnum.</p>
+</section>
+<section class="mp-q">
+<h2 id="hvar-byrja-eg">Hvar byrja ég og hvað kostar það?<a class="headerlink" href="#hvar-byrja-eg" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ef þið eruð með ChatGPT Plus ($20, ≈3.050&nbsp;kr) er Codex innifalið. <strong>Prófið það fyrst.</strong></li>
+<li>Annars Claude Pro ($20, ≈3.050&nbsp;kr) með Claude Code í Desktop appinu.</li>
+<li>Byrjið á einu ódýru og færið ykkur upp ef þið rekist á usage limit.</li>
+</ul>
+</section>
+<section class="mp-q">
+<h2 id="gott-prompt">Hvernig skrifa ég gott prompt?<a class="headerlink" href="#gott-prompt" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Skrifið á ensku. Agentar eru því miður talsvert slakari á íslensku.</li>
+<li>Lýsið útkomunni eins og þið viljið hafa hana, ekki bara ferlinu.</li>
+<li>Gefið agentinum þær upplýsingar sem hann þarf til að klára verkið.</li>
+<li>Segið hvenær verkið telst klárt og hvað þarf ykkar samþykki.</li>
+</ul>
+<p class="mp-prompt-label">Dæmi (promptið sem bjó til Landlíkan, <a href="https://magnusp.is/landlikan/">https://magnusp.is/landlikan/</a>):</p>
+<div class="language-text mp-prompt highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Make an interactive three.js web page: a map of Iceland where I can search for a place by name, draw a rectangle, and get a 3D-printable model of the landscape inside it. Use free, open elevation data and satellite imagery that need no login. Show the model in 3D with the satellite image draped over it and good lighting. Let me set the width in mm, how much to stretch the height, and the base thickness. Export a watertight STL ready for slicing, and stacked contour layers as SVG for laser cutting in a chosen material thickness. Make it a polished product, ready for final release. User interface in both Icelandic and English.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Publish it and put it on pages.
+</span></code></pre></div>
+</section>
+<section class="mp-q">
+<h2 id="bara-ad-bulla">Hvernig veit ég hvort hann sé bara að bulla?<a class="headerlink" href="#bara-ad-bulla" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Látið hann prófa eigin vinnu og opnið svo útkomuna sjálf.</li>
+<li>Biðjið um heimildir og athugið hvort þær segi það sem hann heldur fram.</li>
+<li>Notið alltaf Git/version control.</li>
+<li>Litlar prufur fyrst. Vel heppnað export er ekki það sama og vel heppnuð prentun.</li>
+</ul>
+</section>
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 19V5"/></svg>
+  Fara aftur efst
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Magnús Pétursson
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/MagnusPetursson" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.tabs","navigation.top"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Afritað á klemmuspjald","clipboard.copy":"Afrita á klemmuspjald","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 til viðbótar á þessari síðu","search.result.more.other":"# til viðbótar á þessari síðu","search.result.none":"Engar síður fundust","search.result.one":"1 síða fannst","search.result.other":"# síður fundust","search.result.placeholder":"Byrjaðu að skrifa til að hefja leit","search.result.term.missing":"Vantar","select.version":"Veldu útgáfu"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.67a597eb.min.js"></script>
+      
+        <script src="../javascripts/site.js"></script>
+      
+    
+  </body>
+</html>
